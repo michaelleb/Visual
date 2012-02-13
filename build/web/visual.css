@@ -1,0 +1,99 @@
+/* 
+    Document   : visual
+    Created on : Feb 13, 2012, 5:48:34 AM
+    Author     : Misha
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/*html{
+    
+    padding: 0px;
+    margin: 0px;
+}*/
+body{
+    padding: 0px;
+    margin: 0px;
+   
+}
+/*================== Genetal tags style ======================================*/
+table, table tr,table td{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+/*================================== whole window style ===================== */
+#windowTable{
+    
+    border-width: 0px;
+    border-collapse: collapse;
+}
+/*============================ Tools and path row style ======================*/
+/*
+this section buld of one row of height 30px; with 3 data places used acordingly:
+td1: hold the tools button, width 30px
+td2: used as separation vertical line ( hold nothing), should be 2px width
+td3: used to hold path buttons that will be added dinamicly. width 100% (after td1+td2 )
+*/
+
+tr#funcBar{
+    width:100%;
+    
+}
+
+/*td1 and tools button*/
+td#funcBar-td1{
+    background-color: #bbbbbb;
+    padding: 0px;
+    margin: 0px;
+    width: 2%;
+}
+
+td#funcBar-td1 img{
+    width: 27px;
+    height: auto;
+    border: 0;
+    display:block;  
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+/*td2 - the wertical separator*/
+td#funcBar-td2{
+    background-color: #bbbbbb;
+   width: 2%;
+}
+/*td3 and path aria */
+td#funcBar-td3{
+    background-color: #bbbbbb;
+    
+}
+
+ul#pathHolder, ul#pathHolder li{
+    margin: 0;
+    padding: 0;
+    display: inline; /* Shows each item side-by-side */
+    list-style-type: none; /* Gets rid of the bullet points */  
+    float: left;
+    
+}
+ul#pathHolder li{
+    background-image: url("pathTab.png");
+    background-origin: border-box;
+    
+}
+ul#pathHolder a{
+    display: block;
+    float: left;
+    padding: 0 0 0 5px; /* Provides horizontal separation between menu items */
+
+    
+}
+
+
+
