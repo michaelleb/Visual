@@ -51,6 +51,7 @@ td#funcBar-td1{
     padding: 0px;
     margin: 0px;
     width: 2%;
+    
 }
 
 td#funcBar-td1 img{
@@ -74,26 +75,34 @@ td#funcBar-td3{
     
 }
 
-ul#pathHolder, ul#pathHolder li{
+
+.menu{
+    height: 27px;
+
+    background-color: #333;
+} 
+.menu ul{
     margin: 0;
     padding: 0;
-    display: inline; /* Shows each item side-by-side */
-    list-style-type: none; /* Gets rid of the bullet points */  
     float: left;
-    
-}
-ul#pathHolder li{
-    background-image: url("pathTab.png");
-    background-origin: border-box;
-    
-}
-ul#pathHolder a{
-    display: block;
+} 
+.menu ul li{
+    display: inline;
+} .menu ul li a{
     float: left;
-    padding: 0 0 0 5px; /* Provides horizontal separation between menu items */
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #333;
+} 
+.menu ul li a:visited{
+    color: white;}
 
-    
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
 }
+
 
 
 

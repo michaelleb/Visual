@@ -34,14 +34,49 @@
               </td>
               
               <td id="funcBar-td3"  >
-             
-                  <img src=""/>
                    
-                    <ul  id="pathHolder">
+   <!--               <ul  id="pathHolder">
                         
-                        <li><a href="#" > product </a> </li>
-                        <li><a href="#">chat</a> </li>
+                        <li style="  padding: 0px; margin: 0px;">
+                            <a href="#" style="width: 90px; height: 27px; background-image: url(pathTab95X27.png); text-center: center;  color: white; text-decoration: none; border-top: 10px; " > 
+                                <span style="text-align: center; text-indent: 10px; ">Login</span>      
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> Main </a>
+                        </li>
                     </ul>
+
+-->
+<div class="menu">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Link</a>
+        </li>
+        <li>
+            <a href="#">Link</a>
+        </li>
+        <li>
+            <a href="#">Link</a>
+        </li>
+    <br style="clear:left"/>
+</div> 
+          
+
+   <!--         <div >
+                
+                <table><tr></tr> <tr><td> Login </td></tr><tr></tr></table>
+            </div>
+            
+            <div style=" width: 95px; height: 27px; background-image: url(pathTab95X27.png); text-align: center; vertical-align: middle; color: white; padding: 0px;margin: 0px;">
+                
+                <table><tr></tr> <tr><td> Main </td></tr><tr></tr></table>
+            </div>
+   -->
+                
                
               </td>
               
