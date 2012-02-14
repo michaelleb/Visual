@@ -57,5 +57,8 @@
               </tr>
             
         </table>
+        
+        <!-- link to ajax page -->
+        <a href="jsp/ajaxView.jsp"> ajax </a>
     </body>
 </html>
