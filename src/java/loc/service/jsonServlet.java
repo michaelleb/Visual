@@ -35,21 +35,23 @@ public class jsonServlet extends HttpServlet {
             throws ServletException, IOException {
 
         System.out.println("ajax request arive !");
-        
+        //response.setContentType("text/html;charset=UTF-8");
         response.setContentType("application/json"); 
         response.setCharacterEncoding("UTF-8"); 
         
         MyData data = new MyData();
-        data.setDestId("body");
-        data.setMessage("<h1> Misha's data </h1>");
-
-        
+        data.setTargetElement("body");
+        data.setMessage("<h1> data recievd by jeson goes here</h1> ");
         Gson gson = new Gson();
+        
+        String reply = gson.toJson(data);
+        
+        System.out.println(reply);
         
         PrintWriter out = response.getWriter();
         try {
             
-            out.write( gson.toJson(data, MyData.class) );
+            out.write( reply );
         
         } finally {            
             out.close();
