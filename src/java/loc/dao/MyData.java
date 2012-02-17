@@ -11,24 +11,8 @@ import java.lang.String;
  */
 public class MyData {
     
-   private String destId;
+   private String targetElement;
    private String message;
-
-    public MyData(String destId, String message) {
-        this.destId = destId;
-        this.message = message;
-    }
-
-    public MyData() {
-    }
-
-    public String getDestId() {
-        return destId;
-    }
-
-    public void setDestId(String destId) {
-        this.destId = destId;
-    }
 
     public String getMessage() {
         return message;
@@ -37,6 +21,14 @@ public class MyData {
     public void setMessage(String message) {
         this.message = message;
     }
-   
-   
+
+    public String getTargetElement() {
+        return targetElement;
+    }
+
+    public void setTargetElement(String targetElement) {
+        this.targetElement = targetElement;
+    }
+
+    
 }

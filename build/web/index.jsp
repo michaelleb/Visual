@@ -39,8 +39,8 @@
                    
                     <ul  id="pathHolder">
                         
-                        <li><a href="#" > product </a> </li>
-                        <li><a href="#">chat</a> </li>
+                        <li><a href="#" > Product </a> </li>
+                        <li><a href="#"> Chat</a> </li>
                     </ul>
                
               </td>

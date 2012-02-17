@@ -19,6 +19,7 @@ body{
     margin: 0px;
    
 }
+
 /*================== Genetal tags style ======================================*/
 table, table tr,table td{
     padding: 0px;
@@ -42,6 +43,7 @@ td3: used to hold path buttons that will be added dinamicly. width 100% (after t
 
 tr#funcBar{
     width:100%;
+    height: 30px;
     
 }
 
@@ -50,27 +52,28 @@ td#funcBar-td1{
     background-color: #bbbbbb;
     padding: 0px;
     margin: 0px;
-    width: 2%;
+    width: 30px;
 }
 
 td#funcBar-td1 img{
-    width: 27px;
+    width: 30px;
     height: auto;
     border: 0;
     display:block;  
     padding: 0px;
-    margin: 0px;
-   
+    margin: 0px; 
 }
 
 /*td2 - the wertical separator*/
 td#funcBar-td2{
     background-color: #bbbbbb;
    width: 2%;
+   height: 30px;
 }
 /*td3 and path aria */
 td#funcBar-td3{
     background-color: #bbbbbb;
+    height: 30px;
     
 }
 
@@ -80,18 +83,26 @@ ul#pathHolder, ul#pathHolder li{
     display: inline; /* Shows each item side-by-side */
     list-style-type: none; /* Gets rid of the bullet points */  
     float: left;
+    height: 30px;
     
 }
 ul#pathHolder li{
-    background-image: url("pathTab.png");
+    background-image: url("images/newPathTab.png");
     background-origin: border-box;
+    background-position: left 0px; 
+    margin: 0 0 0 5px;
+    color: white;
     
 }
 ul#pathHolder a{
     display: block;
     float: left;
-    padding: 0 0 0 5px; /* Provides horizontal separation between menu items */
-
+    margin: 0 5px 0 5px; /* Provides horizontal separation between menu items */
+    color: white;
+    text-decoration: none;
+    background-image: url("images/newPathTab.png");
+    background-origin: border-box;
+    background-position: right 0px top -30px; 
     
 }
 

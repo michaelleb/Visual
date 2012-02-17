@@ -13,19 +13,65 @@
   
         <script type="text/javascript" src="../jquery_171min.js"></script>
         
-        <script type="text/javascript">  
-            
-            function getData(){
-                $('body').append('no ajax');
-          
-                $.getJSON("http://localhost:8080/Visual/jsonServlet", function(myData) { 
-                    var elementId = $.text(myData.destId);
+        <script type="text/javascript" >  
 
-                    $(elementId).html(myData.message);
-                    }); 
+           
+            
+
+            var targetElement;
+
+            function getData(){
+
+                $.getJSON("http://localhost:8080/Visual/jsonServlet", presentData); 
+            
+            }
+            
+            function loadData(){
+                $.get('http://localhost:8080/Visual/jsp/datajsp.jsp',function(data){
+                    
+                    $('#pid').append(data);
+                    
+                });
+            }
+            
+            function presentData(data){
+                
+                targetElement = data.targetElement;
+                $(targetElement).append(data.message);
+            }
+            
+            //testing object referrence:
+            function classA(){
+                this.setNum = function(num){
+                    this.num = num;
+                };
+                    
             };
             
-      </script>
+            function classB (){
+                this.ptr = null;
+                this.setA = function(a){
+                    this.ptr = a;
+                }
+                this.getA = function(){
+                    return this.ptr;
+                }
+                
+            };
+            
+            var a1 = new classA();
+            a1.setNum(5);
+            
+            var b1 = new classB();
+            var b2 = new classB();
+            
+            b1.ptr = b2.ptr = a1;
+            
+            b1.getA().num = 8;
+            
+            document.write("b1 = " + b1.getA().num + " b2 = "+ b2.getA().num);
+
+        </script>
         
         
     </head>
@@ -33,5 +79,9 @@
         <h1>Hello World!</h1>
         
         <a href="#" onclick="getData();" > get Data </a>
+        
+        <p id="pid" onclick="loadData();">
+            load data
+        </p>
     </body>
 </html>
